@@ -5,12 +5,12 @@
 :root {
   /* Primary colors */
   --grayishBlue: hsl(237, 18%, 59%);
-  --softRed: hsl(345, 95%, 68%);
+  --softRed: #fb6087;
   /* Neutral colors */
   --white: hsl(0, 0%, 100%);
   --darkDesaturatedBlue: hsl(236, 21%, 26%);
   --veryDarkBlue: hsl(235, 16%, 14%);
-  --superDarkBlue: hsl(234, 17%, 12%);
+  --superDarkBlue: #191a24;
 
   font-family: "Red Hat Text", system-ui, Avenir, Helvetica, Arial, sans-serif;
 
