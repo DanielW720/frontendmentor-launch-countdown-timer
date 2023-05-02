@@ -17,7 +17,7 @@ const CountdownCard = ({
           {count}
         </h2>
         <div
-          className={`h-10 sm:h-16 bg-[#2c2c44] rounded-t border-b-[1px] border-b-[var(--superDarkBlue)] relative hover:rotate-180 ${
+          className={`h-10 sm:h-16 bg-[#2c2c44] rounded-t border-b-[1px] border-b-[var(--superDarkBlue)] relative ${
             // Flip card. Not finished
             // count === "00" ||
             // count === "10" ||
