@@ -6,6 +6,9 @@ export default {
       boxShadow: {
         card: "0 7px 0px -2px #191922",
       },
+      screens: {
+        xs: "500px",
+      },
     },
   },
   plugins: [],

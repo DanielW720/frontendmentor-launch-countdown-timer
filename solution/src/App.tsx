@@ -4,7 +4,7 @@ import patternHills from "./assets/images/pattern-hills.svg";
 import CountdownCard from "./CountdownCard";
 
 const App: FC = () => {
-  const [count, setCount] = useState(7 * 24 * 60 * 60);
+  const [count, setCount] = useState(14 * 24 * 60 * 60);
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -31,10 +31,10 @@ const App: FC = () => {
     <>
       <main className="min-h-screen overflow-hidden relative min-w-[300px] bg-gradient-to-b from-[#1e1e28] to-[#251c2c]">
         <div className="absolute w-full h-60 top-[20vh] flex flex-col items-center">
-          <h1 className="text-white text-2xl pl-6 pr-6 mb-12 text-center tracking-[0.3rem]">
+          <h1 className="text-white text-2xl pl-6 pr-6 mb-12 text-center tracking-[0.3rem] sm:tracking-[0.5rem]">
             WE'RE LAUNCHING SOON
           </h1>
-          <div className="grid grid-cols-4 gap-4 sm:gap-8 h-full p-2 w-full sm:w-[650px]">
+          <div className="grid grid-cols-4 gap-4 sm:gap-8 h-full p-2 w-[300px] xs:w-[450px] sm:w-[650px]">
             <CountdownCard timeframe="days" count={formatTime(daysLeft)} />
             <CountdownCard timeframe="hours" count={formatTime(hoursLeft)} />
             <CountdownCard
@@ -55,7 +55,7 @@ const App: FC = () => {
           className="absolute z-0 bottom-0 h-60 scale-x-[2.75] right-64 sm:scale-x-150 sm:right-32 lg:right-0 lg:left-0 lg:w-full"
         />
 
-        <div className="absolute bottom-14 left-[30%] flex justify-between w-[40vw] sm:w-[20vw] sm:left-[40%]">
+        <div className="absolute bottom-20 left-[30%] flex justify-between w-[40vw] sm:w-[20vw] sm:left-[40%]">
           <a href="#" className="cursor-pointer">
             <svg
               className="text-[#8385A9] fill-current hover:text-[#fb6087]"
